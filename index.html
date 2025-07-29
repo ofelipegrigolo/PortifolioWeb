@@ -29,7 +29,7 @@
         </nav>
     </div>
     <!--Container Homepage / Aprensentação / Redes Sociais-->
-    <div class="homepage-container">
+    <div class="homepage-container" id="home">
         <div class="homepage-content">
             <p id="msg">Olá, fico feliz pela visita <i class="fa-solid fa-hand-peace"></i></p>
             <h1>Felipe Grigolo</h1>
@@ -37,43 +37,66 @@
             <p id="subtitulo">Transformando ideias em experiências digitais impactantes.</p>
             <div class="redes-sociais-content">
                 <a href=""><button><i class="fa-brands fa-linkedin"></i></button></a>
-                <a href=""><button><i class="fa-brands fa-github"></i></button></a>
-                <a href=""><button><i class="fa-brands fa-instagram"></i></button></a>
+                <a href="https://github.com/ofelipegrigolo"><button><i class="fa-brands fa-github"></i></button></a>
+                <a href="https://www.instagram.com/lipe.grigolo"><button><i class="fa-brands fa-instagram"></i></button></a>
             </div>
         </div>
     </div>
-    <!--Container Sobre / Texto central / Texto sobre-->
-    <div class="sobre-container">
+    <!--Container Sobre / Texto central / Texto sobre / Habilidades na area -->
+    <div class="sobre-container" id="about">
         <div class="sobre-content">
             <h2>Conheça Minha Jornada, por trás do codigo.</h2>
             <p>Sou Felipe Rodrigues Grigolo, estudante de Ciência da Computação com experiência prática em desenvolvimento web, banco de dados, APIs e front-end, adquirida em estágios.
 
 Tenho domínio em PHP, JavaScript, HTML, CSS, PostgreSQL, Figma, Bootstrap e Spring Boot. Sou apaixonado por tecnologia e automobilismo, o que me impulsiona a buscar constantemente novos conhecimentos e desafios na área de TI.</p>
         </div>
+        <div class="habilidades-content">
+            <h3>Aqui está algumas das minhas Habilidades.</h3>
+            <ul class="habilidades-list">
+                <li><i class="fa-brands fa-php"></i></li>
+                <li><i class="fa-brands fa-js"></i></li>
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+                <li><i class="fa-brands fa-figma"></i></li>
+            </ul>
+        </div>
     </div>
     <!--Container Projetos / Cards de projetos / Projetos em destaque-->
-   <div class="projetos-container">
+   <div class="projetos-container" id="projects">
     <h2>Veja alguns dos meus Projetos em Destaque.</h2>
     <div class="projetos-content">
         <div class="projeto-card">
             <h3>Calculadora de Media</h3>
             <p>Descrição do projeto 1.</p>
-            <img src="" alt="">
+            <button id="btn-projeto">Ver no Github</button>
         </div>
         <div class="projeto-card">
             <h3>LandingPage</h3>
             <p>Descrição do projeto 2.</p>
-            <img src="" alt="">
+            <button  id="btn-projeto">Ver no Github</button>
+        </div>
+        <div class="projeto-card">
+            <h3>ChatWeb</h3>
+            <p>Descrição do projeto 3.</p>
+            <button  id="btn-projeto">Ver no Github</button>
         </div>
     </div>
     </div>
     <!--Container Contato / Formulário de contato / Formulário de contato-->
-    <div class="contato-container">     
-        <h2>Gostou dos meus Projetos, Entre em contato.</h2>
+    <div class="contato-container" id="contact">     
+        <h2>Gostou dos meus <b>Projetos</b>, Entre em contato.</h2>
+        <p>Estou sempre aberto a novas oportunidades e colaborações. Se você tem uma ideia, projeto ou apenas quer conversar, sinta-se à vontade para entrar em contato!</p>
         <form class="contato-form">
             <input type="text" placeholder="Seu Nome" required>
             <input type="email" placeholder="Seu Email" required>
-            <textarea placeholder="Sua Mensagem" required></textarea>
+            <textarea placeholder="Me envie sua Mesnsagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
         </form>
+    </div>
+    <!--Footer-->
+    <div class="footer">
+        <p>&copy; 2023 Felipe Grigolo. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Felipe Grigolo</p>
+    </div>
 </body>
 </html>
