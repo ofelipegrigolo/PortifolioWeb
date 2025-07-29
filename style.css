@@ -138,7 +138,7 @@ body {
     margin-bottom: 20px;
 }   
 .projetos-container {
-    width: 100%;
+    width: auto;
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
@@ -149,13 +149,18 @@ body {
     text-align: center;
     padding: 80px;
 }
+.projetos-container h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 .projetos-content {
     display: flex;
     flex-direction: row;
     gap: 24px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 20px 0;
+    padding: 100px 0px 0px 0px;
 }
 .projeto-card {
     min-width: 260px;
@@ -166,7 +171,7 @@ body {
     box-sizing: border-box;
     flex: 0 0 260px;
     transition: transform 0.3s;
-    margin: 0;
+    margin: 0px 0px 20px 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -190,8 +195,47 @@ body {
     padding: 80px;
     text-align: center;
 }
-.contato-content {
+.contato-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.contato-form input, .contato-form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}   
+
+@media screen and (max-width: 768px) {
+    #msg {
+        font-size: 8px;
+        margin-bottom: -70px;
+        margin: 0 auto;
+    }
+    .homepage-content h1 {
+        font-size: 48px;
+    }
+    .homepage-content p {
+        font-size: 20px;
+    }
+    .sobre-container h2 {
+        font-size: 22px;
+    }
+    .sobre-container p {
+        font-size: 14px;
+    }
+    .projeto-card {
+        min-width: 220px;
+        max-width: 220px;
+    }
+    .projeto-card h3 {
+        font-size: 18px;
+    }
+    .navbar-item{
+        margin: 0 10px;
+    }
+}   
