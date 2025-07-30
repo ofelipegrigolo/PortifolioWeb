@@ -6,8 +6,10 @@ body {
     background-color: var(--background-color);
     padding: 0px;
     margin: 0px;
-    width: 100vw;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+* {
+    box-sizing: border-box;
 }
 ::-webkit-scrollbar {
     width: 8px;
@@ -321,6 +323,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     #msg {
         font-size: 8px;
         margin-bottom: -70px;
@@ -355,8 +360,9 @@ body {
 
     .sobre-container,
     .projetos-container,
-    .contato-container {
+    .contato-container, .homepage-container, .footer {
         padding: 40px 30px;
+        overflow-x: hidden;
     }
     h2{
         font-size: 20px !important;
