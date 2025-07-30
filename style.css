@@ -108,6 +108,7 @@ body {
 }   
 .redes-sociais-content button:hover{
     color: #ff8800;
+    transition: 1s;
 }
 .sobre-container {
     width: auto;
@@ -221,6 +222,7 @@ body {
     margin: 0;
     font-size: 14px;
     color: #ccc;
+    text-align: left;
 }
 #btn-projeto{
     background-color: #ff8800;
@@ -231,6 +233,21 @@ body {
     cursor: pointer;
     font-size: 14px;
     margin-top: 40px;
+}
+#ver-mais{
+    background-color: transparent;
+    color: #ff8800;
+    border: 1px solid #ff8800;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+}
+#ver-mais:hover, #btn-projeto:hover {
+    background-color: #ff8800;
+    color: var(--text-color);
+    transition: 1s;
 }
 .contato-container {
     width: auto;
@@ -334,5 +351,14 @@ body {
     .habilidades-list li {
          font-size: 34px;
          padding: 10px;
-}   
+    }   
+
+    .sobre-container,
+    .projetos-container,
+    .contato-container {
+        padding: 40px 30px;
+    }
+    h2{
+        font-size: 20px !important;
+    }
 }   
