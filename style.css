@@ -348,6 +348,68 @@ body {
     padding: 20px;
     position: relative;
 }
+
+
+
+
+
+
+
+.efeito-entrada-cima{
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: efeito-entrada-cima 2s forwards;
+}
+@keyframes efeito-entrada-cima {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes efeito-aparecer {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.habilidades-list{
+    opacity: 0;
+    animation: efeito-aparecer 2s forwards;
+    animation-delay: 0.5s;
+}
+.projeto-card{
+    opacity: 0;
+    animation: efeito-aparecer 2s forwards;
+    animation-delay: 0.8s;
+}
+.contato-form{
+    opacity: 0;
+    animation: efeito-aparecer 2s forwards;
+    animation-delay: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
     body{
         overflow-x: hidden;
@@ -412,6 +474,7 @@ body {
         text-decoration: none;
         font-size: 18px;
         font-family: 'Inter', sans-serif;   
+        background-color: red;
     }
     .menu-list li{
         margin: 20px 0;

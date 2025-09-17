@@ -12,6 +12,8 @@
     <link rel="icon" href="logo felipe.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/9b100b8313.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 
     <meta name="description" content="Portfólio de Felipe Grigolo, desenvolvedor web especializado em criar experiências digitais impactantes.">
     <meta name="keywords" content="Felipe Grigolo, desenvolvedor web, portfólio, projetos, contato">
@@ -119,4 +121,49 @@ Tenho domínio em PHP, JavaScript, HTML, CSS, PostgreSQL, Figma, Bootstrap e Spr
     </div>
 
 </body>
+
+<script>
+
+ScrollReveal().reveal('.homepage-content h1', {
+  distance: '50px',
+  origin: 'top',
+  opacity: 0,
+  duration: 1200,
+});
+
+ScrollReveal().reveal('.homepage-content p', {
+  distance: '50px',
+  origin: 'bottom',
+  opacity: 0,
+  duration: 1200,
+  delay: 300,
+  interval: 200,
+});
+
+
+ScrollReveal().reveal('.sobre-container h2', {
+  distance: '50px',
+  origin: 'top',
+  opacity: 0,
+  duration: 1000,
+});
+
+ScrollReveal().reveal('.sobre-container p', {
+  distance: '50px',
+  origin: 'bottom',
+  opacity: 0,
+  duration: 1000,
+  delay: 200,
+  interval: 150,
+});
+
+ScrollReveal().reveal('.projeto-card', {
+  distance: '50px',
+  origin: 'bottom',
+  opacity: 0,
+  duration: 1000,
+  interval: 200,
+});
+
+</script>
 </html>
